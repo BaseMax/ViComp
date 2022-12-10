@@ -1,5 +1,31 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
+        <file>Controls/ActionButton.qml</file>
+        <file>Controls/BusyIndicator.qml</file>
+        <file>Controls/Button.qml</file>
+        <file>Controls/CheckBox.qml</file>
+        <file>Controls/CoinLogo.qml</file>
+        <file>Controls/HorizontalLine.qml</file>
+        <file>Controls/HorizontalSpacer.qml</file>
+        <file>Controls/LinkButton.qml</file>
+        <file>Controls/SolidLink.qml</file>
+        <file>Controls/SwapButton.qml</file>
+        <file>Controls/Switch.qml</file>
+        <file>Controls/Text.qml</file>
+        <file>Controls/VerticalLine.qml</file>
+        <file>Controls/VerticalSpacer.qml</file>
+        <file>Cards/CryptoCard.qml</file>
+        <file>Resources/fonts/Nunito-Bold.ttf</file>
+        <file>Resources/fonts/Nunito-Light.ttf</file>
+        <file>Resources/fonts/Nunito-Medium.ttf</file>
+        <file>Resources/fonts/Nunito-Regular.ttf</file>
+        <file>FontSystem.qml</file>
+        <file>AppStyle.qml</file>
+        <file>Resources/fonts/Font Awesome 6 Brands-Regular-400.otf</file>
+        <file>Resources/fonts/Font Awesome 6 Free-Regular-400.otf</file>
+        <file>Resources/fonts/Font Awesome 6 Free-Solid-900.otf</file>
+        <file>Controls/Slider.qml</file>
+        <file>Controls/InputBox.qml</file>
     </qresource>
 </RCC>

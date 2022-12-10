@@ -1,9 +1,8 @@
 # -------------------- PROJECT TEMPLATE INFO ---------------------------------------------
-#   Title   :                       Project Template
-#   Version :                       1.0.12
+#   Title   :                       ViComp
+#   Version :                       0.5
 #   Author  :                       Kambiz Asadzadeh
-#   Url     :                       https://github.com/genyleap/Project-Template
-#   Organization  :                 The Genyleap
+#   Url     :                       https://github.com/BaseMax/ViComp
 # ----------------------------------------------------------------------------------------
 
 cmake_minimum_required(VERSION 3.23)
@@ -19,12 +18,12 @@ include(FetchContent)
 
 # ------ PROJECT INFO ------
 # Options
-set(PROJECT_NAME "Project-Template" CACHE STRING "Project Name.") #You can change "ProjectTemplate" with your project name.
+set(PROJECT_NAME "ViComp" CACHE STRING "Project Name.") #You can change "ProjectTemplate" with your project name.
 set(PROJECT_TARGET ${PROJECT_NAME} CACHE STRING "Project Target Name.")
 
 set(PROJECT_VERSION_MAJOR 1)
-set(PROJECT_VERSION_MINOR 0)
-set(PROJECT_VERSION_PATCH 16)
+set(PROJECT_VERSION_MINOR 5)
+set(PROJECT_VERSION_PATCH 0)
 
 # ---- Project settings ----
 set_property(GLOBAL APPEND PROPERTY USE_FOLDERS ON)
@@ -147,10 +146,6 @@ file(GLOB PRECOMPILED precompiled/pch.hpp)
 file(GLOB HEADERS source/${SUFFIX_HPPHEADER})
 file(GLOB SOURCES source/${SUFFIX_SOURCE})
 
-file(GLOB EXAMPLES
-     source/examples/${SUFFIX_HPPHEADER}
-     source/examples/${SUFFIX_SOURCE}
-)
 file(GLOB UTILS
      utilities/${SUFFIX_HPPHEADER}
      utilities/${SUFFIX_SOURCE}
@@ -198,7 +193,6 @@ file(GLOB SOURCESFILE
     ${UTILS}
     ${CONFIGFILE}
     ${PRECOMPILED}
-    ${EXAMPLES}
     )
 
 source_group("PrecompiledHeaders"  FILES ${PRECOMPILED})
@@ -207,7 +201,6 @@ source_group("Entry Point (Main)"   FILES ${MAIN_ENTRY_POINT})
 source_group("Base"   FILES ${HEADERS} ${SOURCES})
 source_group("UI"     FILES ${UI_SOURCE})
 source_group("Config" FILES ${CONFIGFILE})
-source_group("Examples"  FILES ${EXAMPLES})
 
 # ------ OUTPUTS CONFIG ------
 message(STATUS "${BoldRed}------ ${PROJECT_TARGET} Tools Configuration ------${ColourReset}")
