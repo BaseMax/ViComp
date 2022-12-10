@@ -1,8 +1,8 @@
-# ViComp
+# ViComp Desktop
 
 ViComp is a graphical user interface for ffmpeg and ffprobe. It is a cross-platform application that can be used on Windows, macOS, Linux, and FreeBSD. It is written in C++ and Qt. You can easily use it to reduce the size of your video files.
 
-![](preview.jpg)
+![ViComp](https://user-images.githubusercontent.com/2658040/206872636-8b92153e-afd3-4fb4-bad0-772cb684a24c.png)
 
 ## Supported platforms:
 
