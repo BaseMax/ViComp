@@ -10,19 +10,6 @@ ViComp is a graphical user interface for ffmpeg and ffprobe. It is a cross-platf
 - [x] Windows
 - [x] Linux
 - [x] freeBSD
-- [ ] OpenBSD
-- [ ] NetBSD
-- [x] iOS
-- [ ] watchOS
-- [x] Android
-
-## Supported project type:
-
-- [x] Core Application
-- [x] Desktop Application
-- [x] Embedded Application
-- [x] Mobile Application
-- [x] Library
 
 ## Language Standard Support [C++2a or C++2b]
 
