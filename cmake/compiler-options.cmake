@@ -35,22 +35,27 @@ if (OPTIMIZATION_LEVEL)
   add_definitions(-DOPTIMIZATION_LEVEL)
 endif()
 
+# -lstdc++: Links against the GNU Standard C++ Library.
+# -lc++: Links against the libc++ library (used in Clang/LLVM compiler).
+# -lc++abi: Links against the libc++abi library, which provides low-level support for the C++ runtime (used in Clang/LLVM compiler).
+# Note: Both GCC and MSVC, you generally don't need to explicitly include flags like -lc++abi or their equivalents.
+
 # C++ STL Library Features.
 if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
-    find_package(TBB REQUIRED COMPONENTS tbb)
-    list(APPEND LIB_STL_MODULES_LINKER tbb)
+    set(CMAKE_CXX_STANDARD_LIBRARIES "-lstdc++")
 endif()
+
 
 if(CMAKE_CXX_COMPILER_ID STREQUAL "MSVC")
     #Todo...
 endif()
 
 if(CMAKE_CXX_COMPILER_ID STREQUAL "Clang")
-    #Todo...
+    set(CMAKE_CXX_STANDARD_LIBRARIES "-lc++ -lc++abi")
 endif()
 
 if(CMAKE_CXX_COMPILER_ID STREQUAL "AppleClang")
-    #Todo...
+    set(CMAKE_CXX_STANDARD_LIBRARIES "-lc++ -lc++abi")
 endif()
 
 if(CMAKE_CXX_COMPILER_ID STREQUAL "MSVC")
